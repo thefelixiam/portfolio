@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tom, Software Engineer. Frontend / Full-stack. TypeScript, Next.js, Node.js."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#0d1117" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230d1117'/%3E%3Ctext x='3' y='12' font-size='10' fill='%233fb950' font-family='monospace'%3E$%3C/text%3E%3C/svg%3E"
+    />
+    <script>
+      try {
+        var __t = localStorage.getItem("ta-theme");
+        if (!__t)
+          __t = matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark";
+        document.documentElement.dataset.theme = __t;
+      } catch (e) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        #typed:empty::after {
+          content: 'Software Engineer';
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav aria-label="Primary">
+      <div class="nav-inner">
+        <div class="logo"><a href="#">felix@dev</a><span>:~$</span></div>
+        <div class="nav-links">
+          <a href="#about">about</a>
+          <a href="#stack">stack</a>
+          <a href="#experience">work</a>
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+        </div>
+        <button
+          class="btn secondary"
+          id="btn-theme"
+          type="button"
+          style="margin-left: auto"
+          aria-pressed="false"
+          aria-label="Switch to light theme"
+          title="Toggle dark / light theme"
+        >
+          ☀ light
+        </button>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div id="site" class="wrap">
+        <header class="hero">
+          <div>
+            <div><span class="prompt" aria-hidden="true">$</span> whoami</div>
+            <h1 id="hero-name">Tom</h1>
+            <div class="subtitle" aria-hidden="true">
+              <span id="typed"></span><span class="caret"></span>
+            </div>
+            <p class="sr-only">
+              Software Engineer — Frontend / Full-stack. Open to work.
+            </p>
+            <div class="meta" id="hero-meta"></div>
+            <p id="hero-about" style="color: var(--muted); max-width: 60ch"></p>
+            <div class="cta">
+              <a
+                class="btn secondary"
+                id="hero-github"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >github ↗</a
+              >
+              <a
+                class="btn secondary"
+                id="hero-linkedin"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >linkedin ↗</a
+              >
+            </div>
+          </div>
+          <div class="avatar-box">
+            <img
+              src="avatar.webp"
+              alt="its_me"
+              width="220"
+              height="220"
+              loading="lazy"
+              decoding="async"
+              style="
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto 10px;
+                border: 1px solid var(--accent-dim);
+              "
+            />
+            <div class="status">
+              <span class="dot" aria-hidden="true"></span>open_to_work
+            </div>
+          </div>
+        </header>
+
+        <section id="about" class="reveal">
+          <h2>about</h2>
+          <div class="card"><p id="about-text" style="margin: 0"></p></div>
+        </section>
+
+        <section id="stack" class="reveal">
+          <h2>stack</h2>
+          <div id="skills"></div>
+        </section>
+
+        <section id="experience" class="reveal">
+          <h2>work</h2>
+          <div id="jobs"></div>
+        </section>
+
+        <section id="projects" class="reveal">
+          <h2>projects</h2>
+          <div class="proj-grid" id="proj-grid"></div>
+        </section>
+
+        <section id="education" class="reveal">
+          <h2>education</h2>
+          <div id="edu"></div>
+        </section>
+
+        <footer id="contact" class="reveal">
+          <div>
+            <span class="prompt" aria-hidden="true">$</span> cat contact.txt
+          </div>
+          <div class="links">
+            <a id="f-github" href="#" target="_blank" rel="noopener">github</a>
+            <a id="f-linkedin" href="#" target="_blank" rel="noopener"
+              >linkedin</a
+            >
+          </div>
+          <div style="margin-top: 12px">
+            © <span id="year"></span> <span id="f-name"></span> — built with
+            vanilla html/css/js.
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
